@@ -24,6 +24,13 @@ func main(){
 	for k,v := range tastMap{
 		fmt.Println(k,v)
 	}
-
+	k := "two1"
+	v , ok := tastMap[k]
+	fmt.Println(ok)
+	if ok {
+		fmt.Println(v)
+	} else {
+		fmt.Println(ok)
+	}
 
 }
