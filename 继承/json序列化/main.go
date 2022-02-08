@@ -6,7 +6,7 @@ import (
 )
 
 type Student struct {
-	Id   string
+	Id   string 
 	Name string
 	Sex  string
 }

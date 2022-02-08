@@ -3,10 +3,10 @@ package main
 import "fmt"
 
 
-func swap(a, b *int)  {
-    *a, *b = *b, *a
-    fmt.Println(*a, *b)
-}
+// func swap(a, b *int)  {
+//     *a, *b = *b, *a
+//     fmt.Println(*a, *b)
+// }
 
 func main() {
 	// a := 100
@@ -17,15 +17,22 @@ func main() {
 	// fmt.Println(*ptr) // 100
 
 	// 通过指针给函数传值
-	a := 1  // 定义一个int类型并复值
-    b := 2
-	fmt.Println(a, b)
-    swap(&a, &b)
-    fmt.Println(a, b)
+	// a := 1  // 定义一个int类型并复值
+    // b := 2
+	// fmt.Println(a, b)
+    // swap(&a, &b)
+    // fmt.Println(a, b)
 	/*
 	1 2
 	2 1
 	2 1
 	*/
+	a := 100
+	var ptr *int
+	fmt.Println(ptr)
+	fmt.Println(&a)
+	ptr = &a 
+	fmt.Println(ptr)
+	fmt.Println(*ptr)   
 
 }
