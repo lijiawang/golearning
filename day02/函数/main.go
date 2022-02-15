@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"time"
+	// aaa "github.com/lijiawang/golearning/day02/函数/aaa"
 )
 
 // // defer 语句
@@ -30,6 +31,9 @@ import (
 // 	return ret
 // }
 
+func init(){
+	fmt.Println("hhhhh")
+}
 func main() {
 	// x := 1
 	// y := 2
@@ -42,5 +46,6 @@ func main() {
 	fmt.Println( now)
 	fmt.Println(now.Unix())
 	fmt.Println(time.Hour)
+	// fmt.Println(aaa)
 	
 }
